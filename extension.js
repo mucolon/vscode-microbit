@@ -32,7 +32,7 @@ function activate(context) {
 
 		console.log(vscode.window.activeTextEditor.document.fileName);
 
-		var text = "uflash \"" + vscode.window.activeTextEditor.document.fileName + "\"";
+		var text = "python3 -m uflash \"" + vscode.window.activeTextEditor.document.fileName + "\"";
 		console.log(text);
 
 		t.sendText(text);
